@@ -1,5 +1,5 @@
 # laravel-mix-herd
-Laravel Mix v6 extension that makes HMR work with [Laravel Herd]([https://herd.laravel.com/]) certificates.
+Laravel Mix v6 extension that makes HMR work with [Laravel Herd]([https://herd.laravel.com/]) certificates. Froked from andreiio/laravel-mix-valet to use Herd instead Valet only.
 
 ***Note**: This extension assumes you already have your project linked and secured in Herd.*
 
