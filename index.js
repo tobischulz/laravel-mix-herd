@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const mix = require('laravel-mix');
 
-class LaravelMixValet {
+class LaravelMixHerd {
     constructor() {
         this.config = {
             host: this.getAppHost(),
@@ -12,7 +12,7 @@ class LaravelMixValet {
     }
 
     name() {
-        return 'valet';
+        return 'herd';
     }
 
     register(config = {}) {
@@ -69,7 +69,7 @@ class LaravelMixValet {
         } 
         
         if (['darwin', 'win32'].includes(process.platform)) {
-            dir = '.config/valet';
+            dir = './Library/Application Support/Herd/config/valet';
         }
 
         if (!dir) {
@@ -108,4 +108,4 @@ class LaravelMixValet {
     }
 }
 
-mix.extend('valet', new LaravelMixValet());
+mix.extend('herd', new LaravelMixHerd());
