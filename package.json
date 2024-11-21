@@ -1,25 +1,26 @@
 {
-    "name": "laravel-mix-valet",
+    "name": "laravel-mix-herd",
     "version": "1.4.0",
-    "description": "Laravel Mix v6 extension that makes HMR work with Laravel Valet certificates",
+    "description": "Laravel Mix v6 extension that makes HMR work with Laravel Herd certificates",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/andreiio/laravel-mix-valet.git"
+        "url": "git+https://github.com/tobischulz/laravel-mix-herd.git"
     },
     "keywords": [
         "laravel",
         "mix",
         "plugin",
         "valet",
+        "herd",
         "https"
     ],
     "author": "Andrei Ioniță",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/andreiio/laravel-mix-valet/issues"
+        "url": "https://github.com/tobischulz/laravel-mix-herd/issues"
     },
-    "homepage": "https://github.com/andreiio/laravel-mix-valet#readme",
+    "homepage": "https://github.com/tobischulz/laravel-mix-herd#readme",
     "peerDependencies": {
         "laravel-mix": "^6.0.0"
     }
