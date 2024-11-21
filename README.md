@@ -1,34 +1,34 @@
-# laravel-mix-valet
-Laravel Mix v6 extension that makes HMR work with [Laravel Valet](https://laravel.com/docs/8.x/valet) certificates.
+# laravel-mix-herd
+Laravel Mix v6 extension that makes HMR work with [Laravel Herd]([https://herd.laravel.com/]) certificates.
 
-***Note**: This extension assumes you already have your project linked and secured in Valet.*
+***Note**: This extension assumes you already have your project linked and secured in Herd.*
 
 ## Installation
 
 Install the extension:
 
 ```sh
-npm install laravel-mix-valet --save-dev
+npm install laravel-mix-herd --save-dev
 ```
 
-Next require the extension in your `webpack.mix.js` and call `valet()`:
+Next require the extension in your `webpack.mix.js` and call `herd()`:
 
 ```js
 const mix = require('laravel-mix');
-require('laravel-mix-valet');
+require('laravel-mix-herd');
 
 mix.js('resources/js/app.js', 'public/js')
-    .valet();
+    .herd();
 ```
 
 Alternatively, you can pass a config object instead, which will be merged with the defaults below:
 
 ```js
 const mix = require('laravel-mix');
-require('laravel-mix-valet');
+require('laravel-mix-herd');
 
 mix.js('resources/js/app.js', 'public/js')
-    .valet({
+    .herd({
         host: 'othersite.test',
         port: 12345,
     });
